@@ -39,6 +39,13 @@ public class Servlet6 extends GenericServlet{
 		    	
 		    	ps.execute();
 		    	System.out.println("data is saved");
+			
+			PrintWriter pw = res.getWriter();
+		    	res.setContentType("text/html");
+		    	
+		    	pw.println("User Name : "+Username+"<br>");
+		    	pw.println("Email : "+Email+"<br>");
+		    	pw.println("Date of Birth : "+DateofBirth);
 		   
 		}
 		catch (ClassNotFoundException e) {
