@@ -25,7 +25,7 @@ public class Servlet6 extends GenericServlet{
 		Connection con = null;
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/batch07","root","saurabh@123");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/batch07","root","");
 		    PreparedStatement ps = con.prepareStatement("insert into loginpage(Username,Email,DateofBirth) values(?,?,?)");
 		   
 		    
